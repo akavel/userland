@@ -177,7 +177,7 @@ add_column = function()
       scrolling_locked = true,
       spacing = 4,
       data = {
-         name = string.char(64 + #columns.children + 1),
+         name = string.char(string.byte('A') + #columns.children),
          add_cell = add_cell,
       }
    }))
